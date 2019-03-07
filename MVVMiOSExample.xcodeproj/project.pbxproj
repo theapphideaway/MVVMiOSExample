@@ -14,6 +14,7 @@
 		0E92CD3C2230A1C1008BD8C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E92CD3A2230A1C1008BD8C4 /* LaunchScreen.storyboard */; };
 		0E92CD472230A1C1008BD8C4 /* MVVMiOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E92CD462230A1C1008BD8C4 /* MVVMiOSExampleTests.swift */; };
 		0E92CD522230A1C1008BD8C4 /* MVVMiOSExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E92CD512230A1C1008BD8C4 /* MVVMiOSExampleUITests.swift */; };
+		0E92CD602230A462008BD8C4 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E92CD5F2230A462008BD8C4 /* ViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0E92CD4D2230A1C1008BD8C4 /* MVVMiOSExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMiOSExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E92CD512230A1C1008BD8C4 /* MVVMiOSExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMiOSExampleUITests.swift; sourceTree = "<group>"; };
 		0E92CD532230A1C1008BD8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E92CD5F2230A462008BD8C4 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0E92CD382230A1C1008BD8C4 /* Assets.xcassets */,
 				0E92CD3A2230A1C1008BD8C4 /* LaunchScreen.storyboard */,
 				0E92CD3D2230A1C1008BD8C4 /* Info.plist */,
+				0E92CD5F2230A462008BD8C4 /* ViewControllerViewModel.swift */,
 			);
 			path = MVVMiOSExample;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E92CD342230A1BD008BD8C4 /* ViewController.swift in Sources */,
+				0E92CD602230A462008BD8C4 /* ViewControllerViewModel.swift in Sources */,
 				0E92CD322230A1BD008BD8C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,12 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var counterLabel: UILabel!
+    
+    
+    var viewModel = ViewControllerViewModel(){
+        didSet{
+            updateUI(viewModel)
+        }
+    }
+    
+    @IBAction func incrementCount(_ sender: UIButton) {
+        viewModel.incrementCountLogic()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        counterLabel.text = ""
+        viewModel.delegate = self
     }
+}
 
+extension ViewController{
+    func updateUI(_ viewModel: ViewControllerViewModel){
+        counterLabel.text = viewModel.viewModelCounterLabel
+    }
+}
 
+extension ViewController: CountIncrementerDelegate{
+    func didHitFive() {
+        print("You have hit the button five times!")
+    }
 }
 

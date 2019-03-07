@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+protocol CountIncrementerDelegate {
+    func didHitFive()
+}
+
+struct ViewControllerViewModel{
+    
+    var viewModelCounterLabel: String
+    var viewModelCounter: Int = 0
+    var delegate: CountIncrementerDelegate?
+    
+    mutating func incrementCountLogic(){
+        viewModelCounter += 1
+        viewModelCounterLabel = String(viewModelCounter)
+        
+        if(viewModelCounter == 5){
+            delegate?.didHitFive()
+        }
+    }
+}
